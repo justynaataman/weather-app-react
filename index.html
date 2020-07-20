@@ -1,28 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>weather</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <link href="css/style.css" rel = "stylesheet">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>weather</title>
 
-  <script src="https://unpkg.com/react/umd/react.development.js"></script>
-  <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
-  <script src="https://unpkg.com/babel-standalone/babel.js"></script>
-
-
-</head>
-<body>
-
-
-  <div class="container">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link href="css/style.css" rel = "stylesheet">
+  
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div class="container"></div>
+    <script type="text/babel">
+
+      ReactDOM.render(
+        <h1>app</h1>,
+        document.querySelector('.container')
+      );
+
+    </script>
 
 
-
-  </div>
-
-  <script src="app.js"></script>
-</body>
+  </body>
 </html>
